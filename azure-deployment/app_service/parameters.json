@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "webAppName": {
+      "value": "photonic-analyzer"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "sku": {
+      "value": "B1"
+    },
+    "linuxFxVersion": {
+      "value": "DOCKER|photonicanalyzeracr.azurecr.io/photonic-structure-analyzer:latest"
+    },
+    "acrName": {
+      "value": "photonicanalyzeracr"
+    },
+    "acrResourceGroup": {
+      "value": "photonic-analyzer-rg"
+    },
+    "databaseServerName": {
+      "value": "photonic-db"
+    },
+    "databaseName": {
+      "value": "photonic_analyzer"
+    },
+    "databaseUser": {
+      "value": "dbadmin"
+    },
+    "databasePassword": {
+      "value": ""
+    }
+  }
+}
